@@ -1,15 +1,15 @@
 # Site settings
 description: A blog about lorem ipsum dolor sit amet
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site 
+url: "http://PAN001.github.io" # the base hostname & protocol for your site 
 
 # User settings
 username: PAN001
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
+user_description: Computer scientist
+user_title: 
+email: pan.atopos@outlook.com
+twitter_username: pan@Panatopos
+github_username:  PAN001
 gplus_username:  lorem_ipsum
 disqus_username: lorem_ipsum
 
