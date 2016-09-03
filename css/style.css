@@ -62,7 +62,7 @@ img {
 /*-- banner --*/
 .banner{
 	padding:95px 0px;
-	background:url(../images/banner6.jpg) no-repeat 0px 0px;
+	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	min-height:350px;
 }
@@ -177,11 +177,11 @@ h4.agile{
 /*-- //banner --*/
 
 /*-- about --*/
-.about,.skills,.download,.portfolio,.blog,.contact{
+.about,.skills,.cv,.portfolio,.blog,.contact,.article{
 	padding:55px 0px;
 	text-align:center;
 }
-.about h3,.skills h3,.download h3,.portfolio h3,.blog h3 ,.contact h3{
+.about h3,.skills h3,.cv h3,.portfolio h3,.blog h3 ,.contact h3, .article h3{
 	color:#000;
 	font-size:36px;
 }
@@ -211,7 +211,7 @@ label.line {
 
 /*--skills --*/
 .skills{
-	background:url('../images/skillsbg.jpg') no-repeat 0px 0px;
+	background:url('../images/projectbg.jpg') no-repeat 0px 0px;
 	text-align:left;
 	background-size: cover;
 }
@@ -322,8 +322,47 @@ label.line {
 /*--//progress-bars--*/
 /*-- //skills --*/
 
-/*-- download--*/
-.download a{
+/*--skills --*/
+.article{
+	background:url('../images/skillsbg.jpg') no-repeat 0px 0px;background:url('../images/skillsbg.jpg') no-repeat 0px 0px;
+	text-align:left;
+	background-size: cover;
+}
+
+.article h3, h4{
+	color:#FFF;
+}
+
+.bttn{
+	margin-top:3em;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.bttn a{
+	border:3px solid #afb1b4;
+	font-size:1.8em;
+	font-weight:300;
+	color:#afb1b4;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	outline: none;
+	padding:5px 2em;
+}
+
+.bttn a:hover{
+	text-decoration:none;
+	color:#55adb7;
+	border:3px solid #55adb7;
+}
+
+.cv {
+	height: 1300px;
+}
+/*-- cv--*/
+.cv a{
 	color: #F58703;
 	padding:10px 20px;
 	font-size:16px;
@@ -336,11 +375,11 @@ label.line {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-.download a:hover{
+.cv a:hover{
 	background: #F58703;
 	color:#fff;
 }
-/*--//download --*/
+/*--//cv --*/
 
 
 /*-- projects --*/
@@ -923,7 +962,7 @@ input[type="submit"]:hover{
 		width: 26%;
 		padding: 6px;
 	}
-	.about, .skills, .download, .portfolio, .blog, .contact {
+	.about, .skills, .cv, .portfolio, .blog, .contact, .article {
 		padding: 40px 0px;
 	}
 	.clientsgrid {
@@ -948,7 +987,7 @@ input[type="submit"]:hover{
 	.about h3, .skills h3, .portfolio h3, .blog h3, .contact h3 {
 		font-size: 32px;
 	}
-	.download h3{
+	.cv h3, .article h3{
 		font-size:28px;
 	}
 	.skills-left, .skills-right, .blog-grids {
@@ -1110,7 +1149,7 @@ input[type="submit"]:hover{
 	.about h3, .skills h3, .portfolio h3, .blog h3, .contact h3 {
 		font-size: 30px;
 	}
-	.download h3{
+	.cv h3, .article h3 {
 		font-size:25px;
 	}
 	.skills-left h4 {
