@@ -630,6 +630,10 @@ h2.resp-accordion {
 	-o-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
 }
+
+.linkForProject {
+	font-size: 20px;
+}
 /*--//portfolio--*/
 
 
