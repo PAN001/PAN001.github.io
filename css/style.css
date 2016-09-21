@@ -691,7 +691,7 @@ h2.resp-accordion {
 .blog h4{
 	color: #F58703;
 	font-size:22px;
-	text-align:left;
+	/*text-align:left;*/
 	margin:10px 0px;
 }
 .blog p{
