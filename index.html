@@ -118,16 +118,17 @@
           <div class="row">
             <div class="col-md-6">
               <div class="pubimg">
-                <img src="./images/DNN.png">
+                <img width="400px" src="./images/framework_no_boundary.png">
               </div>
             </div>
             <div class="col-md-6">
               <div class="pub">
-                <div class="pubt">A Deep Learning Approach to Imgae-based Group-level Emotion Analysis</div>
-                <div class="pubd"> The project is focused on the problem of emotion recognition for a group of people in images. Auto- matic facial expression recognition has seen much research in recent times. However, little attention has been given to the estimation of the overall expression theme conveyed by an image of a group of people. Additionally, there is very few application of Deep Learning in the filed of GEA. In this case, we are trying to adopt Deep Learning into this field, together with using multi-modal framework. In this project, a multi-modal framework is adopted, and much more compact and representative features will be extracted using Deep Learning. Some concepts and ideas in Sentiment Analysis in Natural Language Processing will be referred to so as to bring new angles into image-based emotion analysis. </div>
+                <div class="pubt">Feature Extraction via Random Recurrent Deep Ensembles and its Application in Group-level Happiness Estimation</div>
+                <div class="pubd"> In this project, we present a novel ensemble framework to extract highly discriminative feature representation of image and its application for group-level happiness intensity prediction in wild. In order to generate enough diversity of decisions, we train n convolutional neural networks by bootstrapping the training set and extract n features for each image from them. A recurrent network is then used to remember which network extracts better feature and generate the final feature representation for one individual image. We use several group emotion models (GEM) to aggregate face features in a group and use fine-tuned support vector regression (SVR) to get the final results. Through extensive experiments, the great effectiveness of our Random Recurrent Deep Ensembles (RRDE) are demonstrated in both structural and decisional ways. Our best result yields a 0.55  root-mean-square error (RMSE) on validation set of HAPPEI dataset, significantly better than the baseline of 0.78. Meanwhile, I also build an online RESTful API called GREP (GRoup Emotion Parser) and a website for demonstration purpose. </div>
                 <div class="publ">
                   <ul>
-                    <li><a href="https://grep.panatopos.top" target="_blank">[Project: <strong> GREP </strong>]</a></li>
+                    <li><a href="https://grep.panatopos.com" target="_blank">[Demo: <strong> GREP </strong>]</a></li>
+                    <li><a href="https://github.com/PAN001/GREP" target="_blank">[Project: <strong> GREP </strong>]</a></li>
                   </ul>
                 </div>
               </div>
