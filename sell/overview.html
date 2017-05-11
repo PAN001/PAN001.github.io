@@ -5,22 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
 </head>
 <body>
 
 <div class="container">
-  <h1>Readme</h1>
+  <h1 id="readme">Readme</h1>
   <ul>
     <li> UNNC CS 2017 Flea Market为CS大四学长学姐自产自销自营的小规模跳蚤市场，诚信经营，童叟无欺，<strong>价格均可面议</strong> </li>
     <li> list时刻更新，欲购从速，先到先得。联系微信：<img width="200" src="img/qr.jpg"> </li>
     <li> 买得越多，折扣越大，可附赠日用品或书籍 </li>
     <li> Textbook多数为Computer Science Y1-Y4系列丛书，多为经典书籍，值得拥有 </li>
+    <li> 由于考试季，网站为临时搭建，过于简陋，敬请原谅 </li>
   </ul> 
   
   <!-- <h1>To Sell</h1> -->
-  <h1>Textbook</h1>            
+  <h1 id="txtbook">Textbook</h1>            
   <table class="table table-striped">
     <thead>
       <tr>
@@ -79,7 +81,7 @@
         <td>Engineering a Compiler (2nd Ed)</td>
         <td>382</td>
         <td>100%</td>
-        <td>1</td>
+        <td>2</td>
         <td>AE3CMP Textbook</td>
       </tr>
       <tr>
@@ -92,8 +94,8 @@
       <tr>
         <td>Ethics in a Computing Culture</td>
         <td>240</td>
-        <td>100%</td>
-        <td>3</td>
+        <td>100%/80%</td>
+        <td>3/1</td>
         <td>AE3PEC Textbook</td>
       </tr>
       <tr>
@@ -149,7 +151,7 @@
         <td>Head First Android Development</td>
         <td>228</td>
         <td>80%/100%/100%</td>
-        <td>3</td>
+        <td>4/1/1</td>
         <td>AE3MDP Textbook</td>
       </tr>
       <tr>
@@ -176,8 +178,8 @@
       <tr>
         <td>Computer Organization And Design</td>
         <td>394</td>
-        <td>99%</td>
-        <td>1</td>
+        <td>80%/99%</td>
+        <td>1/1</td>
         <td>AE1CSA Textbook</td>
       </tr>
       <tr>
@@ -236,6 +238,13 @@
         <td>1</td>
         <td></td>
       </tr>
+      <tr>
+        <td>逻辑学导论</td>
+        <td>100*</td>
+        <td>100%</td>
+        <td>1</td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
 
@@ -245,7 +254,7 @@
     <li> 除非特别注明，原价为学校官方给出的<a href="http://moodle.nottingham.ac.uk/mod/resource/view.php?id=2438444" target="_blank">价格</a>。标*价格为Amazon均价或可查原价。 </li>
   </ul>  
 
-  <h1>Commodity</h1>            
+  <h1 id="commodity">Commodity</h1>            
   <table class="table table-striped">
     <thead>
       <tr>
@@ -303,6 +312,15 @@
         <td>99%</td>
         <td>1</td>
         <td></td>
+      </tr>
+      <tr>
+        <th scope="row"><img src="img/tieliuhai.png" width="200"></th>
+        <td>花王Cape定型喷雾铁刘海神器</td>
+        <td>50</td>
+        <td>15</td>
+        <td>60%</td>
+        <td>1</td>
+        <td>1瓶。剩余2/3</td>
       </tr>
       <tr>
         <th scope="row"><img src="img/haier.jpeg" width="200"></th>
@@ -395,8 +413,136 @@
         <td></td>
       </tr>
     </tbody>
+  </table>
 </div>
 
+
+
+<div class="slide story" data-slide="2" style = "width:100%;padding-bottom:0px">
+    <div class="container" style = "width:100%;max-width:100%">
+      <div class="row title-row">
+        <h2 id="cp" class="col-12 font-thin">Cooperative Partners</h2>
+      </div><!-- /row -->
+      <div class="row content-row">
+          <div class="template-Home_reviews text-center padded-content" style = "margin-left:10%;width:80%;padding-bottom:5%">
+
+
+<div id="review-carousel" class="slick-initialized slick-slider" style = "width:100%">
+      <div aria-live="polite" class="slick-list draggable">
+        <div class="slick-track" role="listbox" style="opacity: 1; width: 100%; transform: translate3d(0px, 0px, 0px);display:inline-flex;">
+<!-- 1 -->
+      <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+
+        <div class="name-wrap row">
+         <img src="img/pan.jpg" alt="" style = "width:35%;height:10%;border-radius:100%">
+        </div>
+
+        <div id = "bio" >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+        <p class="quote" id = "biop">
+          Eason PAN
+        </p>
+        <p class="quote" style = "color:#4F4F4F">
+       
+          Computer Science<br/>
+          Master @ Carnegie Mellon University
+        </p>
+      </div>
+      <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+
+        <div class="name-wrap row">
+         <img src="img/wang.jpg" alt="" style = "width:35%;height:10%;border-radius:100%">
+        </div>
+<!-- 2 -->
+        <div id = "bio" >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+        <p class="quote" id = "biop">
+          Eric WANG
+        </p>
+        <p class="quote" style = "color:#4F4F4F">
+       
+          Computer Science<br/>
+          Master @ University College London
+        </p>
+<!--         <blockquote>Keep me where the light is.
+    </blockquote> -->
+      </div>
+            <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+
+        <div class="name-wrap row">
+         <img src="img/QY.jpeg" alt="" style = "width:35%;height:10%;border-radius:100%">
+        </div>
+<!-- 3 -->
+        <div id = "bio" >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+        <p class="quote" id = "biop">
+          Iris QU
+        </p>
+        <p class="quote" style = "color:#4F4F4F">
+       
+          Computer Science<br/>
+          Master @ Georgia Institute of Technology
+        </p>
+      </div>
+            <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 30%;">
+
+        <div class="name-wrap row">
+         <img src="img/leon.jpg" alt="" style = "width:33%;height:10%;border-radius:100%">
+        </div>
+<!-- 4 -->
+        <div id = "bio" >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+        <p class="quote" id = "biop">
+          Leon XU
+        </p>
+        <p class="quote" style = "color:#4F4F4F">
+       
+          Computer Science<br/>
+          Master @ University of Southern California
+        </p>
+<!--         <blockquote>Keep me where the light is.
+    </blockquote> -->
+      </div>
+       <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+
+        <div class="name-wrap row">
+         <img src="img/black.jpeg" alt="" style = "width:35%;height:10%;border-radius:100%">
+        </div>
+<!-- 5 -->
+        <div id = "bio" >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+        <p class="quote" id = "biop">
+          Young YANG
+        </p>
+        <p class="quote" style = "color:#4F4F4F">
+       
+          Computer Science<br/>
+          Master @ The University of Nottingham
+        </p>
+    </div>
+  </div>
+  </div>
+</div>
 </body>
 </html>
 
