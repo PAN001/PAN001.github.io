@@ -1808,3 +1808,10 @@ tbody td:first-child{
         float: left;
     }
 }
+
+#x {
+	font-size:70px;
+	text-align: center;
+	color: #999ea5;
+	/*font-weight: 100;*/
+}
