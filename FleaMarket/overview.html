@@ -1,781 +1,1207 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
-<head>
-  <title>UNNC CS 2017 Flea Market </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="jquery.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-</head>
-<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+		<title>e-market Bootstrap Template</title>
+        <!-- ALL STYLESHEET -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<!--link href="css/blog-single.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet"-->
+    </head>   
+	<body>
+		<header class="header">
+			
+			<!-- header top -->
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<ul class="list-inline">
+							</ul>
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+			
+			<!-- logo and adds -->
+			<div class="logo-add">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="logo"><img src="img/market_logo.png" width="210px" alt=""/> </div>
+						</div>
+						<div class="col-sm-8">
+							<h3 class="add bb-year-end-ribbon hidden-xs"><img src="images/red-tablet.png" width="40px;" alt="" /> 
+							<span>Hi! We Can <span>Help</span> You Buy & Sell</span> <button class="btn btn-default"> Get Stared </button></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- header bottom -->
+			<div class="header-bottom">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-default">
+							<div class="container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
 
-<div class="container">
-  <h1 id="readme">Readme</h1>
-  <ul>
-    <li> UNNC CS 2017 Flea Market为CS大四学长学姐自产自销自营的小规模跳蚤市场，诚信经营，童叟无欺，<span class="emphasize"><strong>价格均可协商</strong></span> </li>
-    <li> list<span class="emphasize"><strong>时刻更新</strong></span>，欲购从速，先到先得，联系微信：<img width="200" src="img/qr.jpg"> </li>
-    <li> 买得越多，折扣越大，可附赠日用品或书籍 </li>
-    <li> Textbook多数为Computer Science Y1-Y4系列丛书，多为经典书籍，值得拥有。由于书本新旧不同，有意向者，<span class="emphasize"><strong>自带价格</strong></span>，联系微信</li>
-    <li> <span class="emphasize"><strong>原价并非售价！</strong></span>
-    <li> 由于考试季，网站为临时搭建，过于简陋，还望理解</li>
-    <li> 本网站的初衷是变废为宝，尽可能减少资源浪费，给卖家带来利益回报，给买家送去便利快捷。不存在任何竞争目的。 </li>
-  </ul> 
-  
-  <!-- <h1>To Sell</h1> -->
-  <h1 id="txtbook">Textbook</h1>     
-  <h3 id="txtbook">Computer Science</h3>         
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>书名</th>
-        <th>原价（RMB）</th>
-        <th>新旧程度</th>
-        <th>剩余数量</th>
-        <th>描述</th>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="header-bottom">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="overview.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a></span>
+										</li>
+										<li><a href="product-detail.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a><span class="label label-danger text-center hidden-xs">New <i class="fa fa-caret-right"></i></span>
+											<ul class="dropdown-menu">
+												<li><a href="textbook.html">Textbooks</a></li>
+												<li><a href="commodity.html">Commodities</a></li>
+											</ul>	
+										</li>
+										<li><a href="about-us.html">About Us</a> <span class="label label-info text-center hidden-xs">New <i class="fa fa-caret-right"></i></span></li>
+										<li><a href="buyer.html">Buyer</a></li>
+										<li><a href="seller.html">Seller</a></li>
+									</ul>
+									<!-- <form class="navbar-form navbar-right" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Search...">
+											<span class="nav-search"><a href="#"><i class="fa fa-search"></i></a></span>
+										</div>	
+									</form> -->
+								</div>
+							</div>
+						</nav>
+					</div>	
+				</div>	
+			</div>	
+		</header>	
+		
+		<!-- home -->
+		<section class="home">
+			<div class="intro">
+				<div id="home" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#home" data-slide-to="0" class="active"></li>
+						<li data-target="#home" data-slide-to="1"></li>
+						<!-- <li data-target="#home" data-slide-to="2"></li> -->
+				<!-- 		<li data-target="#home" data-slide-to="3"></li>
+						<li data-target="#home" data-slide-to="4"></li>
+						<li data-target="#home" data-slide-to="5"></li> -->
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="intro-content">
+											<h1> Last Chance </h1>
+											<h2> Biggest <span class="highlight">Sale</span> </h2>
+											<p> </p>
+											<a class="btn btn-default" href="textbook.html">Shop Now</a>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<!-- <img class="img-responsive" src="images/person.png" height="742" alt="" /> -->
+									</div>	
+								</div>	
+							</div>	
+						</div>
+						<div class="item">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="intro-content">
+											<h1>Last Chance</h1>
+											<h2>Sell before <span class="highlight">graduation</span></h2>
+											<a class="btn btn-default">Sell Now</a>
+										</div>
+									</div><!-- 
+									<div class="col-sm-5">
+										<img class="img-responsive" src="images/option.png" alt="" />
+									</div>	 -->
+								</div>	
+							</div>	
+						</div>
+						<!-- <div class="item">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="intro-content">
+											<h1>Last Chance</h1>
+											<h2>Biggest <span class="highlight">Sale</span></h2>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet. Teer eam exerci vputate consetetur.</p>
+											<a class="btn btn-default">Shop Now</a>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<img class="img-responsive" src="images/option.png" alt="" />
+									</div>	
+								</div>	
+							</div>	
+						</div>
+						<div class="item">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="intro-content">
+											<h1>Last Chance</h1>
+											<h2>Biggest <span class="highlight">Sale</span></h2>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet. Teer eam exerci vputate consetetur.</p>
+											<a class="btn btn-default">Shop Now</a>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<img class="img-responsive" src="images/person.png" alt="" />
+									</div>	
+								</div>	
+							</div>	
+						</div>
+						<div class="item">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="intro-content">
+											<h1>Last Chance</h1>
+											<h2>Biggest <span class="highlight">Sale</span></h2>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet. Teer eam exerci vputate consetetur.</p>
+											<a class="btn btn-default">Shop Now</a>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<img class="img-responsive" src="images/option.png" alt="" />
+									</div>	
+								</div>	
+							</div>	
+						</div>
+						<div class="item">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="intro-content">
+											<h1>Last Chance</h1>
+											<h2>Biggest <span class="highlight">Sale</span></h2>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet. Teer eam exerci vputate consetetur.</p>
+											<a class="btn btn-default">Shop Now</a>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<img class="img-responsive" src="images/person.png" alt="" />
+									</div>	
+								</div>	
+							</div>	
+						</div>
+					</div> -->
+					<!-- Controls -->
+					<a class="left carousel-control" href="#home" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+					<a class="right carousel-control" href="#home" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- service -->
+<!-- 		<section class="service">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<div class="service-detail">
+							<span class=" fa diamond"> <i class="fa fa-android"></i></span>
+							<h3>Choose a product</h3>
+							<p>Cicero famously orated against his political opponent Lucius Sergius Catilina type. </p>
+						</div>
+					</div>
+					<div class="col-sm-3 text-center">
+						<div class="service-detail">
+							<span class=" fa diamond"> <i class="fa fa-apple"></i></span>
+							<h3>Choose a product</h3>
+							<p>Cicero famously orated against his political opponent Lucius Sergius Catilina type. </p>
+						</div>
+					</div>
+					<div class="col-sm-3 text-center">
+						<div class="service-detail">
+							<span class=" fa diamond"> <i class="fa fa-html5"></i></span>
+							<h3>Choose a product</h3>
+							<p>Cicero famously orated against his political opponent Lucius Sergius Catilina type. </p>
+						</div>
+					</div>
+					<div class="col-sm-3 text-center">
+						<div class="service-detail">
+							<span class=" fa diamond"> <i class="fa fa-css3"></i></span>
+							<h3>Choose a product</h3>
+							<p>Cicero famously orated against his political opponent Lucius Sergius Catilina type. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		
+		<!-- featured product -->
+		<section class="featured-product">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="">
+							<h1><span class="t-color-1">Featured</span> Products
+								<!-- <small class="btn-group hidden-xs">
+									<a class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" 
+									   aria-expanded="false">All Categries <i class="fa fa-bars"></i></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Option 1</a></li>
+										<li><a href="#">Option 2</a></li>
+									</ul>
+								</small> -->
+							</h1>
+							<div class="heading-border b-color-1"></div>
+						</div>
+					</div>
+				</div> <!-- section title -->
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"><i class="fa fa-angle-left"></i></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"><i class="fa fa-angle-right"></i></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/cs_all.jpeg" alt="">
+											<div class="list-inline">
+												<a href="textbook.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Textbook
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>Compute Science Y1-Y4 Textbooks</h3>
+											<strong></strong>
+										</div>
+									</div>
+								</div>
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Software Engineering</td>
-        <td>251</td>
-        <td>100%</td>
-        <td>1</td>
-        <td>Multiple SE related modules textbooks. As long as Dave is here, this book will be always used. </td>
-      </tr>
-      <tr>
-        <td>Pattern Recognition and Machine Learning</td>
-        <td>363</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>AE3MLE Textbook。已售：4本</td>
-      </tr>
-      <tr>
-        <td>Software Testing And Analysis</td>
-        <td>230</td>
-        <td>100%</td>
-        <td>售罄</td>
-        <td>AE3SQM Textbook。已售：2本</td>
-      </tr>
-      <tr>
-        <td>C++ How to Program, 9/IE</td>
-        <td>265</td>
-        <td>99%/50%</td>
-        <td>4/1</td>
-        <td>AE3CPP Textbook</td>
-      </tr>
-      <tr>
-        <td>C How to Program, 9/IE</td>
-        <td>262</td>
-        <td>99%</td>
-        <td>售罄</td>
-        <td>AE1IPA Textbook。已售：1本</td>
-      </tr>
-      <tr>
-        <td>Introduction to Languages and the Theory of Computation (4th Ed)</td>
-        <td>169</td>
-        <td>99%</td>
-        <td>3</td>
-        <td>AE3MAL Textbook</td>
-      </tr>
-      <tr>
-        <td>Engineering a Compiler (2nd Ed)</td>
-        <td>382</td>
-        <td>99%</td>
-        <td>售罄</td>
-        <td>AE3CMP Textbook。已售：4本</td>
-      </tr>
-      <tr>
-        <td>Computer Security</td>
-        <td>280</td>
-        <td>90%</td>
-        <td>售罄</td>
-        <td>AE3SEC Textbook。已售；4本</td>
-      </tr>
-      <tr>
-        <td>Ethics in a Computing Culture</td>
-        <td>240</td>
-        <td>80%</td>
-        <td>1</td>
-        <td>AE3PEC Textbook。已售：4本</td>
-      </tr>
-      <tr>
-        <td>Clean Code: A Handbook of Agile Software Craftsmanship</td>
-        <td>249</td>
-        <td>100%</td>
-        <td>售罄</td>
-        <td>现AE2SWM Textbook。已售：3本</td>
-      </tr>
-      <tr>
-        <td>Modern Operating Systems</td>
-        <td>265</td>
-        <td>100%</td>
-        <td>1</td>
-        <td>AE2OSC Textbook。已售：3本</td>
-      </tr>
-      <tr>
-        <td>Digital Image Processing</td>
-        <td>180*</td>
-        <td>100%</td>
-        <td>售罄</td>
-        <td>AE2IIP Textbook。已售：4本</td>
-      </tr>
-      <tr>
-        <td>Database Systems: A Practical Approach to Design, Implementation, and Management: Global Edition</td>
-        <td>259</td>
-        <td>99%</td>
-        <td>4</td>
-        <td>AE1DBS Textbook</td>
-      </tr>
-      <tr>
-        <td>Interaction Design: Beyond Human-Computer Interaction, 4th Edition</td>
-        <td>227</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>AE2HCI Textbook。已售：3本</td>
-      </tr>
-      <tr>
-        <td>Computer Networking: A Top-Down Approach</td>
-        <td>310</td>
-        <td>99%</td>
-        <td>5</td>
-        <td>AE2CCN Textbook</td>
-      </tr>
-      <tr>
-        <td>Data Structures and Algorithms in Java 6th Edition</td>
-        <td>690</td>
-        <td>100%</td>
-        <td>售罄</td>
-        <td>AE2ADS Textbook。已售：4本</td>
-      </tr>
-      <tr>
-        <td>Head First Android Development</td>
-        <td>228</td>
-        <td>80%/90%/100%</td>
-        <td>1/1/3</td>
-        <td>AE3MDP Textbook</td>
-      </tr>
-      <tr>
-        <td>Java Programming: A Comprehensive Introduction</td>
-        <td>213</td>
-        <td>99%</td>
-        <td>3</td>
-        <td>AE1ISO Textbook. Java classic book.</td>
-      </tr>
-      <tr>
-        <td>Programming in Haskell</td>
-        <td>188</td>
-        <td>50%</td>
-        <td>1</td>
-        <td>AE1IFP Textbook。已售：1本</td>
-      </tr>
-      <tr>
-        <td>Artificial Intelligence: A Modern Approach, 3rd Revised Global ed</td>
-        <td>250</td>
-        <td>99%</td>
-        <td>2</td>
-        <td>AE1IAI Textbook</td>
-      </tr>
-      <tr>
-        <td>Computer Organization And Design</td>
-        <td>394</td>
-        <td>80%/99%</td>
-        <td>1/2</td>
-        <td>AE1CSA Textbook</td>
-      </tr>
-      <tr>
-        <td>Programming the World Wide Web</td>
-        <td>259</td>
-        <td>80%/100%</td>
-        <td>1/1</td>
-        <td>AE1WPS Textbook</td>
-      </tr>
-      <tr>
-        <td>Head First Jave （中文版）</td>
-        <td>79*</td>
-        <td>99%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Cite Them Right</td>
-        <td>86</td>
-        <td>99%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Algorithm Unlocked</td>
-        <td>108</td>
-        <td>99%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <p> 注： </p>
-  <ul>
-    <li> 新旧程度：100%，全新；99%，1-10处笔记；80%，10-30处笔记；50%，30处笔记以上，但全书仍50%以上clean。</li>
-    <li> 除非特别注明，原价为学校官方给出的<a href="http://moodle.nottingham.ac.uk/mod/resource/view.php?id=2438444" target="_blank">价格</a>。标*价格为Amazon均价或可查原价。 </li>
-  </ul> 
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/cs_all.jpeg" alt="">
+											<div class="list-inline">
+												<a href="textbook.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Textbook
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>International Business Y1-Y4 Textbooks</h3>
+											<strong></strong>
+										</div>
+									</div>
+								</div>
 
-  <h3 id="txtbook">International Business</h3>         
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>书名</th>
-        <th>原价（RMB）</th>
-        <th>新旧程度</th>
-        <th>剩余数量</th>
-        <th>描述</th>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/TV.png" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>40英寸乐视超级电视</h3>
+											<strong> ￥1000 </strong>
+										</div>
+									</div>
+								</div>
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Uses EXCEL Financial Modeling, 4th Edition</td>
-        <td>470</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>Computational Finance Textbook. 赠送电子笔记 </td>
-      </tr>
-      <tr>
-        <td>Introduction to Econometrics, 5th Edition</td>
-        <td>172</td>
-        <td>50%</td>
-        <td>1</td>
-        <td>Introduction to Econometrics Textbook.</td>
-      </tr>
-      <tr>
-        <td>The Economics of the World Trading System, 2004</td>
-        <td>89</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>China and WTO Textbook. 赠送电子笔记 </td>
-      </tr>
-      <tr>
-        <td>Business Database Systems</td>
-        <td>268.95</td>
-        <td>80%</td>
-        <td>1</td>
-        <td>Database Design and Implementation Textbook. 赠送高分project范例 </td>
-      </tr>
-      <tr>
-        <td>Economic Approaches to Organisations (5th edition)</td>
-        <td>255.9</td>
-        <td>50%</td>
-        <td>1</td>
-        <td>Economics of Business Decisions Textbook. 赠送电子笔记 </td>
-      </tr>
-      <tr>
-        <td>Industrial Organisation: Competition, Strategy, Policy</td>
-        <td>266.4</td>
-        <td>50%</td>
-        <td>1</td>
-        <td>Industrial Economics A: Stucture, Compeition and Performance Textbook. 赠送电子笔记 </td>
-      </tr>
-      <tr>
-        <td>Investment</td>
-        <td>220</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y4 financial market Textbook. 赠送全部ppt,pp及课后题答案 </td>
-      </tr>
-      <tr>
-        <td>Principles of Corporate Finance</td>
-        <td>331</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y4 corporate finance Textbook. 赠送课本电子版笔记，纸质版总结，pp essay question answer </td>
-      </tr>
-      <tr>
-        <td>Public Finance</td>
-        <td>193</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y4 public economy Textbook. 赠送课本和reading电子版笔记，纸质版总结，time writing 思路及资料 </td>
-      </tr>
-      <tr>
-        <td>Management and Cost Accounting</td>
-        <td>301</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y4 MAD III/IV Textbook. 赠送课本和reading电子版笔记，纸质版总结，time writing 思路及资料 </td>
-      </tr>
-      <tr>
-        <td>Organising and Managing Work, 2nd edition</td>
-        <td>234</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y3 organization management practice Textbook. 赠送课本和reading电子版笔记，纸质版总结，time writing 思路及资料 </td>
-      </tr>
-      <tr>
-        <td>Finicial</td>
-        <td>470</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y3 computational finance Textbook.</td>
-      </tr>
-      <tr>
-        <td>Marketing Management in China</td>
-        <td>N.A.</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y3 marketing management mix Textbook. 买以上8本书任意一本赠送。</td>
-      </tr>
-      <tr>
-        <td>Operations Management</td>
-        <td>241</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y3 introduction to business operation Textbook. 赠送课本和reading电子版笔记，纸质版总结，time writing 思路及资料 </td>
-      </tr>
-      <tr>
-        <td>The Next Big Thing</td>
-        <td>N.A.</td>
-        <td>99%</td>
-        <td>1</td>
-        <td>Y3 Technology and organization Textbook. 赠送课本和reading电子版笔记，纸质版总结，time writing 思路及资料 </td>
-      </tr>
-    </tbody>
-  </table>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/allen_screen.png" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>Dell/戴尔 23.8英寸液晶显示屏</h3>
+											<strong> ￥1000 </strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/ViewSonic.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>ViewSoni 21.5英寸液晶显示屏</h3>
+											<strong> ￥150 </strong>
+										</div>
+									</div>
+								</div>
 
-  <h3 id="txtbook">Other</h3>         
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>书名</th>
-        <th>原价（RMB）</th>
-        <th>新旧程度</th>
-        <th>剩余数量</th>
-        <th>描述</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>十天突破雅思（口语+写作）</td>
-        <td>120*</td>
-        <td>60%</td>
-        <td>1</td>
-        <td>40元出</td>
-      </tr>
-      <tr>
-        <td>疯狂Android讲义 第3版</td>
-        <td>108*</td>
-        <td>99%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>逻辑学导论</td>
-        <td>100*</td>
-        <td>100%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1984</td>
-        <td>29.8*</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>5元出，可与十天突破雅思一同购买并作为赠品</td>
-      </tr>
-      <tr>
-        <td>剑桥雅思 7-10</td>
-        <td>18*4</td>
-        <td>100%</td>
-        <td>1</td>
-        <td>只字未动</td>
-      </tr>
-      <tr>
-        <td>剑桥词汇 乱序便携版</td>
-        <td>22*</td>
-        <td>100%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>货币战争 1-4</td>
-        <td>39*4</td>
-        <td>100%</td>
-        <td>1</td>
-        <td>not opened once</td>
-      </tr>
-    </tbody>
-  </table> 
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/haier.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>Haier吸尘器</h3>
+											<strong> $100 </strong>
+										</div>
+									</div>
+								</div>
 
-  <h1 id="commodity">Commodity</h1>            
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th></th>
-        <th>物品名</th>
-        <th>原价</th>
-        <th>现价</th>
-        <th>新旧程度</th>
-        <th>数量</th>
-        <th>描述</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><img src="img/TV.png" width="200"></th>
-        <td>镇店之宝：40英寸乐视超级电视</td>
-        <td>2299</td>
-        <td>1000</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>全网影视、综艺、连续剧点播，各大直播平台直播，支持投屏。<a href="https://item.jd.com/2015877.html" target="_blank">京东链接</a></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/ViewSonic.jpeg" width="200"></th>
-        <td>ViewSoni 21.5英寸液晶显示屏</td>
-        <td>780</td>
-        <td>150</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>ViewSonic VA2206LED 1920x1080 VGA & DVI 接口 21.5寸</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/allen_screen.png" width="200"></th>
-        <td>Dell/戴尔 23.8英寸液晶显示屏</td>
-        <td>1449</td>
-        <td>1000</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>Dell/戴尔 U2414H 23.8英寸IPS屏专业绘图超窄边框电脑显示器，可议价</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/grid.jpg" width="200"></th>
-        <td>宜家多格收纳盒</td>
-        <td>10</td>
-        <td>5</td>
-        <td>90%</td>
-        <td>2</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/shenqi.jpeg" width="200"></th>
-        <td>宜家寝室神器</td>
-        <td>20</td>
-        <td>10</td>
-        <td>90%</td>
-        <td>3</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/chuangtou.jpg" width="200"></th>
-        <td>寝室床头神器</td>
-        <td>15</td>
-        <td>5</td>
-        <td>90%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/storage.jpeg" width="200"></th>
-        <td>三层储物柜</td>
-        <td>100</td>
-        <td>50</td>
-        <td>90%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/toumingshounahe.jpg" width="200"></th>
-        <td>宜家透明收纳盒</td>
-        <td>20</td>
-        <td>10</td>
-        <td>99%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/tieliuhai.png" width="200"></th>
-        <td>花王Cape定型喷雾铁刘海神器</td>
-        <td>50</td>
-        <td>15</td>
-        <td>60%</td>
-        <td>1</td>
-        <td>1瓶。剩余2/3</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/haier.jpeg" width="200"></th>
-        <td>Haier吸尘器</td>
-        <td>200</td>
-        <td>100</td>
-        <td>80%</td>
-        <td>1</td>
-        <td>1000W, 220V, <82dB, 电源线5m</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/mirror.jpeg" width="200"></th>
-        <td>可移动式全身镜</td>
-        <td>65</td>
-        <td>30</td>
-        <td>80%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/shounadai.jpeg" width="200"></th>
-        <td>四格收纳袋</td>
-        <td></td>
-        <td>15</td>
-        <td>100%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/gre.jpeg" width="200"></th>
-        <td>GRE新东方词汇打包</td>
-        <td>160</td>
-        <td>80</td>
-        <td>80%</td>
-        <td>售罄</td>
-        <td>GRE 330分者亲测有效</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/shounahe2.jpeg" width="200"></th>
-        <td>宜家SKUBB收纳盒</td>
-        <td>30</td>
-        <td>15</td>
-        <td>100%</td>
-        <td>3</td>
-        <td>黑色。宽度: 31 厘米，深度: 55 厘米，高度: 33 厘米</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/allen_chair.png" width="200"></th>
-        <td>办公椅</td>
-        <td>299</td>
-        <td>150</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>家用转椅休闲椅网布座椅</td>
-      </tr>
-     <tr>
-        <th scope="row"><img src="img/mychair.jpeg" width="200"></th>
-        <td>真皮老板椅</td>
-        <td>440</td>
-        <td>150</td>
-        <td>80%</td>
-        <td>1</td>
-        <td>支持170度躺卧，360度旋转，升降。坐垫、靠背柔软。双层加厚靠背，宽大厚实头枕。使用一年半。扶手有几处磨损。</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/matt_sofa.jpeg" width="200"></th>
-        <td>套间无敌蓝沙发+太妃椅</td>
-        <td>1260</td>
-        <td>500</td>
-        <td>80%</td>
-        <td>1</td>
-        <td>送两个宜家克拉，可议价，联系微信：nootgood。</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/wuling_chair.jpeg" width="200"></th>
-        <td>现代简约北欧宜家日式实木曲木椅靠背扶手餐椅家用电脑椅办公书桌</td>
-        <td>170</td>
-        <td>80</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>送货上门，才买了三个月，不怎么坐，很舒服，坐时间长了腰不会酸，唯一不足就是有一滴污渍。</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/xiaomi.jpeg" width="200"></th>
-        <td>小米体重仪</td>
-        <td>50</td>
-        <td>30</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>精度高，APP数据测量，led灯显示。<a href="https://item.m.jd.com/product/1545210.html?resourceType=jdapp_share&resourceValue=Wxfriends&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=Wxfriends" target="_blank">京东链接</a></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/luyouqi.jpeg" width="200"></th>
-        <td>Gee路由器3</td>
-        <td>219</td>
-        <td>150</td>
-        <td>90%</td>
-        <td>1</td>
-        <td>极路由3，自刷第三方系统，可完美支持全网络shadowsocks翻墙。<a href="https://item.m.jd.com/product/1386706.html?resourceType=jdapp_share&resourceValue=CopyURL&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL" target="_blank">京东链接</a></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/danpianji.jpeg" width="200"></th>
-        <td>单片机调试仪</td>
-        <td>50</td>
-        <td>30</td>
-        <td>100%</td>
-        <td>1</td>
-        <td>全新，未使用过。</td>
-      </tr>
-      <tr>
-        <th></th>
-        <td>宝马自行车</td>
-        <td></td>
-        <td>350</td>
-        <td>40%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/wuling_bed.jpeg" width="200"></th>
-        <td>四人宿舍超舒服1米宽记忆棉床垫</td>
-        <td>430</td>
-        <td>150</td>
-        <td>40%</td>
-        <td>1</td>
-        <td>送开开买的小床垫，比棉被垫着要舒服很多，而且会容易入睡，对失眠很有效，肌肉也更容易放松。有一点污渍，但可以翻过来睡。睡了1年。</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/wuling_pillow.jpeg" width="200"></th>
-        <td>记忆棉太空枕头</td>
-        <td>240</td>
-        <td>99</td>
-        <td>40%</td>
-        <td>1</td>
-        <td>记忆棉，贴合人体曲线，对颈椎很好。之前一直学习一会颈部就发麻，用了这个一段时间就好了。入睡很轻松，帮助缓解失眠。觉得比一般枕头好用很多。用了半年不到。</td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="img/yujia.jpeg" width="200"></th>
-        <td>瑜伽垫</td>
-        <td>50</td>
-        <td>15</td>
-        <td>100%</td>
-        <td>1</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/luyouqi.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>Gee路由器3</h3>
+											<strong> ￥150 </strong>
+										</div>
+									</div>
+								</div>
 
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/tieliuhai.png" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>花王Cape定型喷雾铁刘海神器</h3>
+											<strong> ￥50 </strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		
+		
 
+		<!-- new arrivals product -->
+		<section class="featured-product">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="">
+							<h1><span class="t-color-1">New</span> Arrivals
+								<!-- <small class="btn-group hidden-xs">
+									<a class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" 
+									   aria-expanded="false">All Categries <i class="fa fa-bars"></i></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Option 1</a></li>
+										<li><a href="#">Option 2</a></li>
+									</ul>
+								</small> -->
+							</h1>
+							<div class="heading-border b-color-1"></div>
+						</div>
+					</div>
+				</div> <!-- section title -->
+				<div id="carousel-new-arrivals" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-new-arrivals" data-slide-to="0" class="active"><i class="fa fa-angle-left"></i></li>
+						<li data-target="#carousel-new-arrivals" data-slide-to="1"><i class="fa fa-angle-right"></i></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/mirror.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>可移动式全身镜</h3>
+											<strong> ￥30 </strong>
+										</div>
+									</div>
+								</div>
 
-<div class="slide story" data-slide="2" style = "width:100%;padding-bottom:0px">
-    <div class="container" style = "width:100%;max-width:100%">
-      <div class="row title-row">
-        <h2 id="cp" class="col-12 font-thin">Cooperative Partners</h2>
-      </div><!-- /row -->
-      <div class="row content-row">
-          <div class="template-Home_reviews text-center padded-content" style = "margin-left:10%;width:80%;padding-bottom:5%">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/shounahe2.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>宜家SKUBB收纳盒</h3>
+											<strong>￥15 </strong>
+										</div>
+									</div>
+								</div>
 
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/mychair.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>真皮老板椅</h3>
+											<strong> ￥150 </strong>
+										</div>
+									</div>
+								</div>
 
-<div id="review-carousel" class="slick-initialized slick-slider" style = "width:100%">
-      <div aria-live="polite" class="slick-list draggable">
-        <div class="slick-track" role="listbox" style="opacity: 1; width: 100%; transform: translate3d(0px, 0px, 0px);display:inline-flex;">
-<!-- 1 -->
-      <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/matt_sofa.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>套间无敌蓝沙发+太妃椅</h3>
+											<strong> ￥500 </strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-        <div class="name-wrap row">
-         <img src="img/pan.jpg" alt="" style = "width:35%;height:10%;border-radius:100%">
-        </div>
+						<div class="item">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/allen_chair.png" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>家用转椅休闲椅网布座椅</h3>
+											<strong> ￥150 </strong>
+										</div>
+									</div>
+								</div>
 
-        <div id = "bio" >
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </div>
-        <p class="quote" id = "biop">
-          Eason PAN
-        </p>
-        <p class="quote" style = "color:#4F4F4F">
-       
-          Computer Science<br/>
-          Master @ Carnegie Mellon University
-        </p>
-      </div>
-      <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/xiaomi.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>小米体重仪</h3>
+											<strong> $30 </strong>
+										</div>
+									</div>
+								</div>
 
-        <div class="name-wrap row">
-         <img src="img/wang.jpg" alt="" style = "width:35%;height:10%;border-radius:100%">
-        </div>
-<!-- 2 -->
-        <div id = "bio" >
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </div>
-        <p class="quote" id = "biop">
-          Eric WANG
-        </p>
-        <p class="quote" style = "color:#4F4F4F">
-       
-          Computer Science<br/>
-          Master @ University College London
-        </p>
-<!--         <blockquote>Keep me where the light is.
-    </blockquote> -->
-      </div>
-            <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/wuling_pillow.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>记忆棉太空枕头</h3>
+											<strong> ￥99 </strong>
+										</div>
+									</div>
+								</div>
 
-        <div class="name-wrap row">
-         <img src="img/QY.jpeg" alt="" style = "width:35%;height:10%;border-radius:100%">
-        </div>
-<!-- 3 -->
-        <div id = "bio" >
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </div>
-        <p class="quote" id = "biop">
-          Iris QU
-        </p>
-        <p class="quote" style = "color:#4F4F4F">
-       
-          Computer Science<br/>
-          Master @ Georgia Institute of Technology
-        </p>
-      </div>
-            <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 30%;">
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<!--span class="e-label"><div>Sale</div></span-->
+										<span class="service-link text-center">
+											<img class="img-responsive" src="img/storage.jpeg" alt="">
+											<div class="list-inline">
+												<a href="commodity.html"><i class="fa fa-link"></i></a>
+											</div>
+										</span>
+										<div class="caption">
+											<div class="category"> Commodity
+												<div class="pull-right">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<h3>三层储物柜</h3>
+											<strong> ￥50 </strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- emarket adds -->
+<!-- 		<section class="emarket-adds">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="single-add">
+							<h4>Get <span>50%</span> Discount</h4>
+							<a href="#" class="btn btn-default" role="button">Learn More</a>
+							<span class="img-add"><img src="images/red-tablet.png" alt="" /></span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-add">
+							<h4>Best <span>Offer</span> for You</h4>
+							<a href="#" class="btn btn-default" role="button">Learn More</a>
+							<span class="img-add"><img src="images/red-tablet.png" alt="" /></span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-add">
+							<h4><span>Only</span> Best smartphone</h4>
+							<a href="#" class="btn btn-default" role="button">Learn More</a>
+							<span class="img-add"><img src="images/red-tablet.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	 -->
+		
+		<!-- special price -->
+<!-- 		<section class="special-price">
+			<div class="price-intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="pull-left">
+								<blockquote>
+								<h1> iPhone 6 16Gb Gold</h1>
+								<p>Cicero famously orated against his political opponent Lucius Sergius against his political. </p>								</div>
+							</blockquote>
+							<div class="pull-right"><a class="btn btn-default btn-lg"> Call to Action</a>
+							</div> 
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>	 -->
+			
+		<!-- product info -->
+<!-- 		<section class="product-info">
+			<div class="container">
+				<div class="row">	
+					<div class="col-sm-4">
+						<h1><span class="t-color-3">New</span> Arrival</h1>
+						<div class="heading-border b-color-3"></div>
+						<ul class="media-list">
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h1><span class="t-color-4">Special</span> Product</h1>
+						<div class="heading-border b-color-4"></div>
+						<ul class="media-list">
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+						</ul>
+					</div>	
+					<div class="col-sm-4">
+						<h1><span class="t-color-5">Top</span> Rated</h1>
+						<div class="heading-border b-color-5"></div>
+						<ul class="media-list">
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left text-center"><img src="images/product-1.jpg" alt="">
+									<a href="#"><i class="fa fa-eye"></i></a>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Lorem ipsum dolor sit amet</h3>
+									<div class="category">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+									<strong>$899.99</strong>
+								</div>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</section>	 -->
+		
+		<!-- Recent Post -->
+		<!-- <section class="recent-post">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1><span class="t-color-6">Recent</span> Post</h1>
+						<div class="heading-border b-color-6"></div>
+					</div>
+				</div>
+				<div id="recent-post" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#recent-post" data-slide-to="0" class="active"><i class="fa fa-angle-left"></i></li>
+						<li data-target="#recent-post" data-slide-to="1"><i class="fa fa-angle-right"></i></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">	
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">	
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumbnail">
+										<img class="img-responsive" src="images/e-add-1.jpg" alt="">
+										<div class="text-center"><i class="fa fa-search"></i></div>
+										<div class="caption">
+											<h3 class="media-heading">Lorem ipsum dolor sit amet dolorem molestie</h3>
+											<span><a href="#"> 5 July 2014</a><a href="#"><i class="fa fa-user"></i> Arif</a></span>
+											<p>Nam apeirian assentior ei, utquo eros posse verterem. Cum eu error congue saperet treer eam exerci 												utquo eros posse verterem error.</p>
+											<span class="comment"><i class="fa fa-comments"></i> 5 comments</span>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	 -->
 
-        <div class="name-wrap row">
-         <img src="img/leon.jpg" alt="" style = "width:33%;height:10%;border-radius:100%">
-        </div>
-<!-- 4 -->
-        <div id = "bio" >
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </div>
-        <p class="quote" id = "biop">
-          Leon XU
-        </p>
-        <p class="quote" style = "color:#4F4F4F">
-       
-          Computer Science<br/>
-          Master @ University of Southern California
-        </p>
-<!--         <blockquote>Keep me where the light is.
-    </blockquote> -->
-      </div>
-       <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide21" style="width: 25%;">
+		<!-- sponsor -->
+		<section class="sponsor">
+			<div class="container">			
+				<div id="sponsor" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">	
+								<div class="col-sm-12">
+									<ul class="list-inline text-center">
+										<li><img class="" src="img/UNNC_logo.png" /></li>
+										<!-- <li><img class="" src="images/2.png" /></li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+<!-- 						<div class="item">
+							<div class="row">	
+								<div class="col-sm-12">
+									<ul class="list-inline text-center">
+										<li><img class="" src="images/1.gif" /></li>
+										<li><img class="" src="images/2.png" /></li>
+										<li><img class="" src="images/3.png" /></li>
+										<li><img class="" src="images/4.png" /></li>
+										<li><img class="" src="images/5.png" /></li>
+										<li><img class="" src="images/6.png" /></li>
+										<li><img class="" src="images/7.png" /></li>
+										<li><img class="" src="images/8.png" /></li>
+									</ul>
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<!-- Controls -->
+				<a class="control-left" href="#sponsor" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+				<a class="control-right" href="#sponsor" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+				</div>			
+			</div>
+		</section>	
+		
+		<footer>
+			<div class="footer-top">
+				<div class="container">			
+					<div class="row">	
+						<div class="col-sm-3">
+							<h2>About CS Flea Market</h2>
+							<div class="heading-border b-color-1"></div>
+							<p> UNNC CS 2017 Flea Market为CS大四学长学姐自产自销自营的小规模跳蚤市场，诚信经营，童叟无欺，价格均可协商。list 时刻更新，欲购从速，先到先得，联系微信：Autofail。<br/> <br/>本网站的初衷是变废为宝，尽可能减少资源浪费，给卖家带来利益回报，给买家送去便利快捷。不存在任何竞争目的。
+							<div><a href="">Read More <i class="fa fa-angle-double-right"></i></a></div>
+							</p>
+						</div>
+						<div class="col-sm-3">
+							<h2>Featured Products</h2>
+							<div class="heading-border b-color-1"></div>
+							<ul class="media-list">
+								<li class="media">
+									<div class="media-left"><img src="img/TV.png" alt=""></div>
+									<div class="media-body">
+										<p class="media-heading">40英寸乐视超级电视</p>
+										<div class="category">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star-o"></i>
+										</div>
+										<strong>￥1000</strong>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left"><img src="img/allen_screen.png" alt=""></div>
+									<div class="media-body">
+										<p class="media-heading">Dell/戴尔 23.8英寸液晶显示屏</p>
+										<div class="category">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star-o"></i>
+										</div>
+										<strong>￥1000</strong>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left"><img src="img/ViewSonic.jpeg" alt=""></div>
+									<div class="media-body">
+										<p class="media-heading">ViewSoni 21.5英寸液晶显示屏</p>
+										<div class="category">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star"></i> 
+											<i class="fa fa-star-o"></i>
+										</div>
+										<strong>￥150</strong>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h2>Note</h2>
+							<div class="heading-border b-color-1"></div>
+							<ul class="media-list">
+								<li> 1. 新旧程度：100%，全新；99%，1-10处笔记；80%，10-30处笔记；50%，30处笔记以上，但全书仍50%以上clean。</li>
+								<br/>
+    							<li> 2. 除非特别注明，原价为学校官方给出的<a href="http://moodle.nottingham.ac.uk/mod/resource/view.php?id=2438444" target="_blank">价格</a>。标*价格为Amazon均价或可查原价。 </li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h2>Contact us</h2>
+							<div class="heading-border b-color-1"></div>
+							<strong class="media-heading">Address</strong>
+							<p>#16 907, UNNC</p>
 
-        <div class="name-wrap row">
-         <img src="img/black.jpeg" alt="" style = "width:35%;height:10%;border-radius:100%">
-        </div>
-<!-- 5 -->
-        <div id = "bio" >
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </div>
-        <p class="quote" id = "biop">
-          Young YANG
-        </p>
-        <p class="quote" style = "color:#4F4F4F">
-       
-          Computer Science<br/>
-          Master @ The University of Nottingham
-        </p>
-    </div>
-  </div>
-  </div>
-</div>
-</body>
+							<strong class="media-heading">Phone</strong>
+							<p>+86 13857810767</p>
+
+							<strong class="media-heading">E-Mail Address</strong>
+							<p>zy14897@nottingham.edu.cn</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">		
+					<div class="row">	
+						<div class="col-sm-12 text-center">
+							<p>Copyright 2017 made by <a href="#">Panatopos.com</a> & Disign by Yichen. All Rights Reserved.</p>
+							<ul class="list-inline center-block">
+								<li><a href="#" ><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" ><i class="fa fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</footer>
+			
+        <!-- ALL JAVASCRIPT -->         
+        <script src="js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
-
