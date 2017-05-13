@@ -1815,3 +1815,7 @@ tbody td:first-child{
 	color: #999ea5;
 	/*font-weight: 100;*/
 }
+
+#statement p {
+	font-size:18px;
+}
