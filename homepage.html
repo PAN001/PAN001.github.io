@@ -141,8 +141,30 @@
 
     <div class="container">
       <a name="research"></a>
-      <center></center><h2>Research</h2></center>
+      <center></center><h2>Research/Development</h2></center>
       <div id="pubs">
+
+      <a name="Cdiscount"></a>
+        <div class="pubwrap">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="pubimg">
+                <img width="400px" src="./images/cdiscount_poster_30_20.png">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="pub">
+                <div class="pubt">The main task of this project is about the so called Extreme Classification, where we need to deal with multi-class involving an extremely large number of labels. Specifically, the training set of Cdiscount dataset contains 12,118,359 images (6,924,452 products), and in total, there are 5,270 categories. The final goal of the project is to correctly predict products into these 5,270 categories. First, we experimented with several deep neural network models, including ResNet50, Se-ResNet50, ResNet101, InceptionV3, Xception, etc. with a limited training epochs, to test single model performance and set the baseline for further experiments. Then, we implemented Test Time Augmentation (TTA) and network ensembles to make whole framework more stable in testing stage. Then, in order to eliminate negative effect from noise data in prediction stage, we proposed a noise robust prediction aggregation algorithm. Finally, we used pseudo labeling to further fine-tune the trained neural network in a semi-supervised fashion, hoping to further generalize the model to the testing set and improve the model performance on product-wise prediction (i.e. not simply image-wise prediction). The proposed framework turns out to be more stable and effective than single base model. </div>
+                <div class="publ">
+                  <ul>
+                    <li><a href="http://panatopos.com/papers/Deep_Neural_Network_Ensembles_for_Extreme_Classification.pdf" target="_blank">[Paper: <strong> Here </strong>]</a></li>
+                    <li><a href="https://github.com/PAN001/Deep-Neural-Network-Ensembles-for-Extreme-Classification" target="_blank">[Project: <strong> Here </strong>]</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       <a name="RRDE"></a>
         <div class="pubwrap">
