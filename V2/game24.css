@@ -1,34 +1,38 @@
+html {
+  font-size:20px;
+}
+
 .form-inline {
   text-align:center;
-  margin-top: 100px;
+  margin-top: 5rem;
 }
 
 #inlineFormInput {
-  width:300px;
+  width:15rem;
 }
 
 #gameInput input {
   text-align: center;
-  font-size: 36px;
+  font-size: 1.8rem;
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 #gameInput button {
   text-align: center;
-  font-size: 32px;
+  font-size: 1.6rem;
   vertical-align: middle;
 }
 
 #ans {
   text-align: center;
-  font-size: 36px;
-  margin-top: 30px;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
 }
 
 #title {
   text-align: center;
-  font-size: 50px;
-  margin-top: 80px;
+  font-size: 2.5rem;
+  margin-top: 4rem;
 }
 

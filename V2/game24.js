@@ -48,8 +48,8 @@ function judgePoint24(nums) {
 }
 
 function f(a, strs) {
-    console.log(strs);
-    console.log(a)
+    // console.log(strs);
+    // console.log(a)
     if (a.length == 1) {
         if(a[0] == 24)
             return strs[0];
