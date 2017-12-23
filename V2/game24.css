@@ -1,38 +1,69 @@
 html {
-  font-size:20px;
+  font-size:100%;
 }
 
 .form-inline {
   text-align:center;
-  margin-top: 5rem;
+  margin-top: 5em;
+  /*width:80%;*/
 }
 
-#inlineFormInput {
-  width:15rem;
-}
-
-#gameInput input {
+/*#container {
   text-align: center;
-  font-size: 1.8rem;
-  vertical-align: middle;
-  margin-right: 1rem;
+}
+*/
+
+@media only screen and (min-width: 1024px) {
+  #gameInput input {
+    text-align: center;
+    font-size: 1.8em;
+    vertical-align: middle;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    /*margin-right: 10%;*/
+  }
 }
 
-#gameInput button {
+@media only screen and (max-width: 375px) {
+  #gameInput input {
+    text-align: center;
+    font-size: 1.8em;
+    vertical-align: middle;
+  /*  margin-left: 0.1em;
+    margin-right: 0.1em;*/
+    /*margin-right: 10%;*/
+  }
+
+  .col-xs-6 {
+    width: 80%;
+  }
+
+  .col-xs-3 {
+    width: 10%;
+  }
+}
+
+#buttonContainer {
+  margin-top: 5em;
   text-align: center;
-  font-size: 1.6rem;
+  font-size:100%;
+}
+
+#gameButton {
+  text-align: center;
+  font-size: 1.3em;
   vertical-align: middle;
 }
 
 #ans {
   text-align: center;
-  font-size: 1.8rem;
-  margin-top: 1.5rem;
+  font-size: 1.8em;
+  margin-top: 1.5em;
 }
 
 #title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-top: 4rem;
+  font-size: 2.5em;
+  margin-top: 4em;
 }
 
